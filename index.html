@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="page_title">CPSC436I Message Logger</h1>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="javascript/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav_buttons">
+        <a id=home_button href="/index.html">HOME</a> | <a id="about_button" href="/about.html">ABOUT</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <div>
+      <form id="form" onsubmit="addText(this.text.value); return false;">
+        <label>
+          <!-- The following implementation for onblur/onfocus of the input field's default value was referenced from https://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click -->
+          <input id="input_field" name="text" type="text" value="Insert Message Here..."
+            onfocus="if (this.value == 'Insert Message Here...') {this.value = '';}" size="36" />
+
+        </label>
+        <br />
+        <input id="add" type="submit" value="Submit" />
+        <input type="reset" class="button_stuff" value="Clear Form" />
+        <button id="clear_button" class="button_stuff" onclick="clearTextLog(); return false;">Clear Message Log
+        </button>
+      </form>
+    </div>
+
+    <hr>
+
+    <div id="text_log">
+      <h2>Message Log</h2>
+      <ul id="message_list">
+      </ul>
+    </div>
+
+    <div id="log_controls">
+      <button id="stop_movement" class="button_stuff" onclick="stopMovement();"> Stop Scroll
+      </button>
+      <button id="expand_button" class="button_stuff" onclick="expandMessages();"> Expand
+      </button>
+      <button id="collapse_button" class="button_stuff" onclick="collapseMessages();"> Collapse
+      </button>
+    </div>
+  </body>
+</html>

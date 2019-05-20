@@ -1,0 +1,105 @@
+h1{
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 12px;
+}
+
+h2{
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 9px;
+}
+
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    text-decoration:none;
+    padding: 8px;
+}
+
+a:hover{
+    background-color: black;
+    color:white;
+}
+
+hr{
+    padding: 1px;
+    color: black;
+    background-color: black;
+}
+
+#input_field{
+    color: lightslategrey;
+    text-align: center;
+    width: relative;
+}
+
+.button_stuff{
+    background-color:white;
+    color:black;
+    padding:3;
+}
+
+.button_stuff:hover{
+    background-color: black;
+    color: white;
+    padding:3;
+}
+
+#frogger_start:hover{
+    background-color: green;
+    color: white;
+    size: 2;
+}
+
+#add{
+    background-color:white;
+    color:black;
+    padding:3;
+}
+
+#add:hover{
+    background-color: black;
+    color: white;
+    padding:3;
+}
+
+div{
+    text-align:center;
+}
+
+#nav_buttons {
+    text-align:center;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:left;
+    font-size: 14px;
+
+}
+
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:left;
+    font-size: 14px;
+}
+
+ul{
+    text-align:left;
+    list-style-type: none;
+}
+
+#text_log {
+    text-align:center;
+}
+
+#log_controls {
+    position:relative;
+    text-align:center;
+}
+
+#collapse_button{
+    visibility:hidden;
+}
