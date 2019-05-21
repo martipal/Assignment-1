@@ -72,8 +72,6 @@ function determineStartingSize(messagesToDisplay) {
     }
 }
 
-
-// This method for randomizing colour was referenced/extracted from the following source: https://stackoverflow.com/questions/29356866/change-color-of-the-text-on-click-to-random-color-button
 function randomColour() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
@@ -126,7 +124,7 @@ function collapseMessages() {
 }
 
 function hideCollapseShowExpand() {
-   document.getElementById("collapse_button").style.visibility = 'hidden';
+    document.getElementById("collapse_button").style.visibility = 'hidden';
     document.getElementById("expand_button").style.visibility = 'visible';
 }
 
