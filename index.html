@@ -18,7 +18,6 @@
     <div>
       <form id="form" onsubmit="addText(this.text.value); return false;">
         <label>
-          <!-- The following implementation for onblur/onfocus of the input field's default value was referenced from https://stackoverflow.com/questions/2984311/delete-default-value-of-an-input-text-on-click -->
           <input id="input_field" name="text" type="text" value="Insert Message Here..."
             onfocus="if (this.value == 'Insert Message Here...') {this.value = '';}" size="36" />
 
